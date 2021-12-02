@@ -58,14 +58,14 @@ function catAndMouse(mouse,cat1,cat2) {
   let dist1 = Math.abs(mouse-cat1);
   let dist2 = Math.abs(mouse-cat2);
   let phrase = "os gatos trombam e o rato foge"
-if(dist1<dist2){
-  return ('cat1')
-}
-else if(dist2<dist1){
+  if(dist1<dist2){
+    return ('cat1')
+  }
+  else if(dist2<dist1){
   return ('cat2')
-}
-else if (dist2===dist1)
-return phrase
+  }
+  else if (dist2===dist1)
+  return phrase
 }
 
 
