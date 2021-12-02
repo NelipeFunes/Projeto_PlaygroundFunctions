@@ -27,10 +27,12 @@ function concatName(myArray) {
    return (last +', ' + first)
 }
 
-
 // Desafio 5
-function footballPoints() {
-  
+function footballPoints(wins,ties) {
+  let pointsVictory = 3 * wins;
+  let pointsTies = 1 * ties;
+  let totalPoints = pointsVictory + pointsTies;
+  return totalPoints
 }
 
 // Desafio 6
