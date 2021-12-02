@@ -22,9 +22,9 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName(myArray) {
-   let first = myArray[0]
-   let last = myArray[myArray.length - 1]
-   return (last +', ' + first)
+   let first = myArray[0];
+   let last = myArray[myArray.length - 1];
+   return (last + ', ' + first);
 }
 
 // Desafio 5
@@ -32,30 +32,43 @@ function footballPoints(wins,ties) {
   let pointsVictory = 3 * wins;
   let pointsTies = 1 * ties;
   let totalPoints = pointsVictory + pointsTies;
-  return totalPoints
+  return totalPoints;
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(numbers) {
+  let tempNumber = 0
+  let numberRepetition = 0
+  for(let i = 0;i<numbers.length;i+=1){
+    if(tempNumber<numbers[i]){
+    tempNumber = numbers[i]  
+    }
+  }
+  for(i=0 ; i<numbers.length;i+=0){
+    if(numbers[i]===tempNumber){
+    numberRepetition+=1
+    }
+  }
+
+  return numberRepetition
 }
 
 // Desafio 7
 function catAndMouse() {
-  // seu código aqui
+  
 }
 
 // Desafio 8
 function fizzBuzz() {
-  // seu código aqui
+
 }
 
 // Desafio 9
 function encode() {
-  // seu código aqui
+
 }
 function decode() {
-  // seu código aqui
+
 }
 
 module.exports = {
