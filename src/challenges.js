@@ -37,26 +37,38 @@ function footballPoints(wins,ties) {
 
 // Desafio 6
 function highestCount(numbers) {
-  let tempNumber = 0
-  let numberRepetition = 0
+  let tempNumber = 0;
+  let numberRepetition = 0;
   for(let i = 0;i<numbers.length;i+=1){
     if(tempNumber<numbers[i]){
-    tempNumber = numbers[i]  
+    tempNumber = numbers[i];
     }
   }
   for(i=0 ; i<numbers.length;i+=0){
     if(numbers[i]===tempNumber){
-    numberRepetition+=1
+    numberRepetition+=1;
     }
   }
 
-  return numberRepetition
+  return numberRepetition;
 }
 
 // Desafio 7
-function catAndMouse() {
-  
+function catAndMouse(mouse,cat1,cat2) {
+  let dist1 = Math.abs(mouse-cat1);
+  let dist2 = Math.abs(mouse-cat2);
+  let phrase = "os gatos trombam e o rato foge"
+if(dist1<dist2){
+  return ('cat1')
 }
+else if(dist2<dist1){
+  return ('cat2')
+}
+else if (dist2===dist1)
+return phrase
+}
+
+
 
 // Desafio 8
 function fizzBuzz() {
