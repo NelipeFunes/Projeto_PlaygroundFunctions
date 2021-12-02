@@ -10,16 +10,15 @@ else{
 // Desafio 2
 function calcArea(base,height) {
   let area = (base * height) / 2;
-  return area
+  return area;
   
 }
 
 // Desafio 3
 function splitSentence(string) {
-  let myArray = string.split(' ')
-  return myArray
+  let myArray = string.split(' ');
+  return myArray;
 }
-splitSentence("vamo que vamo")
 
 // Desafio 4
 function concatName() {
