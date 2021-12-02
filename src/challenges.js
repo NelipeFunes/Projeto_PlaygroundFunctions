@@ -21,9 +21,12 @@ function splitSentence(string) {
 }
 
 // Desafio 4
-function concatName() {
-  
+function concatName(myArray) {
+   let first = myArray[0]
+   let last = myArray[myArray.length - 1]
+   return (last +', ' + first)
 }
+
 
 // Desafio 5
 function footballPoints() {
