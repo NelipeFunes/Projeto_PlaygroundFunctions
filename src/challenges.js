@@ -71,18 +71,18 @@ function catAndMouse(mouse,cat1,cat2) {
 // Desafio 8
 function fizzBuzz(numbers) {
   let phrase = [];
-  for(let i = 0; i<numbers.length; i+=0){
+  for(let i = 0; i<numbers.length; i+=1){
     if(numbers[i]%3 === 0 && numbers[i]%5 === 0){
-      phrase.push('"fizzBuzz"')
+      phrase.push("fizzBuzz")
     }
     else if(numbers[i]%3 === 0){
-      phrase.push('"fizz"')
+      phrase.push("fizz")
     }
     else if(numbers[i]%5 === 0){
-      phrase.push('"buzz"')
+      phrase.push("buzz")
     }
     else{
-      phrase.push('"bug!"')
+      phrase.push("bug!")
     }
   }
 return phrase
