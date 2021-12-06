@@ -41,12 +41,12 @@ function highestCount(numbers) {
   let numberRepetition = 0;
   for(let i = 0;i<numbers.length;i+=1){
     if(tempNumber<numbers[i]){
-    tempNumber = numbers[i];
+      tempNumber = numbers[i];
     }
   }
   for(i=0 ; i<numbers.length;i+=0){
     if(numbers[i]===tempNumber){
-    numberRepetition+=1;
+      numberRepetition+=1;
     }
   }
 
@@ -59,16 +59,14 @@ function catAndMouse(mouse,cat1,cat2) {
   let dist2 = Math.abs(mouse-cat2);
   let phrase = "os gatos trombam e o rato foge"
   if(dist1<dist2){
-    return ('cat1')
+    return ('cat1');
   }
   else if(dist2<dist1){
-  return ('cat2')
+  return ('cat2');
   }
   else if (dist2===dist1)
-  return phrase
+  return phrase;
 }
-
-
 
 // Desafio 8
 function fizzBuzz() {
