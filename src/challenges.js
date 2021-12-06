@@ -37,14 +37,14 @@ function footballPoints(wins,ties) {
 
 // Desafio 6
 function highestCount(numbers) {
-  let tempNumber = 0;
+  let tempNumber = numbers[0];
   let numberRepetition = 0;
-  for(let i = 0;i<numbers.length;i+=1){
+  for(let i = 1;i<numbers.length;i+=1){
     if(tempNumber<numbers[i]){
       tempNumber = numbers[i];
     }
   }
-  for(i=0 ; i<numbers.length;i+=0){
+  for(i=0 ;i<numbers.length; i+=1){
     if(numbers[i]===tempNumber){
       numberRepetition+=1;
     }
@@ -69,7 +69,23 @@ function catAndMouse(mouse,cat1,cat2) {
 }
 
 // Desafio 8
-function fizzBuzz() {
+function fizzBuzz(numbers) {
+  let phrase = [];
+  for(let i = 0; i<numbers.length; i+=0){
+    if(numbers[i]%3 === 0 && numbers[i]%5 === 0){
+      phrase.push('"fizzBuzz"')
+    }
+    else if(numbers[i]%3 === 0){
+      phrase.push('"fizz"')
+    }
+    else if(numbers[i]%5 === 0){
+      phrase.push('"buzz"')
+    }
+    else{
+      phrase.push('"bug!"')
+    }
+  }
+return phrase
 
 }
 
