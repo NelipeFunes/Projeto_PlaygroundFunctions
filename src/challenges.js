@@ -90,12 +90,25 @@ return phrase
 }
 
 // Desafio 9
-function encode() {
+function encode(string) {
+    string.replace("a","1")
+    string.replace("e","2")
+    string.replace("i","3")
+    string.replace("o","4")
+    string.replace("u","5")
+  return string
+  }
 
+function decode(string) {
+  string.replace("1","a")
+  string.replace("2","e")
+  string.replace("3","i")
+  string.replace("4","o")
+  string.replace("5","u")
+return string
 }
-function decode() {
 
-}
+
 
 module.exports = {
   calcArea,
