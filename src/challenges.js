@@ -91,21 +91,64 @@ return phrase
 
 // Desafio 9
 function encode(string) {
-    string.replace("a","1")
-    string.replace("e","2")
-    string.replace("i","3")
-    string.replace("o","4")
-    string.replace("u","5")
-  return string
+  
+  let splitedString = string.split('')
+   
+  for(let i = 0;i<splitedString.length;i+=1){
+    if(splitedString[i] === "a"){
+      splitedString[i] = "1"
+    }
+
+    else if(splitedString[i] === "e"){
+      splitedString[i] = "2"
+    }
+    
+    else if(splitedString[i] === "i"){
+      splitedString[i] = "3"
+    }
+    
+    else if(splitedString[i] === "o"){
+      splitedString[i] = "4"
+    }
+    
+    else if(splitedString[i] === "u"){
+      splitedString[i] = "5"
+    }
+   
   }
+   splitedString = splitedString.join("")
+   return splitedString
+}
 
 function decode(string) {
-  string.replace("1","a")
-  string.replace("2","e")
-  string.replace("3","i")
-  string.replace("4","o")
-  string.replace("5","u")
-return string
+ 
+  let splitedString = string.split('')
+   
+  for(let i = 0;i<splitedString.length;i+=1){
+    if(splitedString[i] === "1"){
+      splitedString[i] = "a"
+    }
+
+    else if(splitedString[i] === "2"){
+      splitedString[i] = "e"
+    }
+    
+    else if(splitedString[i] === "3"){
+      splitedString[i] = "i"
+    }
+    
+    else if(splitedString[i] === "4"){
+      splitedString[i] = "o"
+    }
+    
+    else if(splitedString[i] === "5"){
+      splitedString[i] = "u"
+    }
+   
+  }
+   splitedString = splitedString.join("")
+   return splitedString
+
 }
 
 
